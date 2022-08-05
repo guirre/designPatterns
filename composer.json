@@ -1,0 +1,24 @@
+{
+    "name": "guirre/design-patterns",
+    "description": "Apprendre le design pattern en PHP",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Guirre\\DesignPatterns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Guirre\\DesignPatterns\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed GUIRRE",
+            "email": "mohamed.guirre@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
