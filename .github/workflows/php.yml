@@ -38,4 +38,5 @@ jobs:
     # - name: Run test suite
     #  run: composer run-script tests
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      run: vendor/bin/phpunit
+    #  run: vendor/bin/phpunit
+      run: php vendor/bin/phpunit tests
