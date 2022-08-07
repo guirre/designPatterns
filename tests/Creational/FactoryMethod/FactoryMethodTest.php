@@ -1,4 +1,7 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Tests\Creational\FactoryMethod;
 
 use Guirre\DesignPatterns\Creational\FactoryMethod\FileLogger;
@@ -10,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase
 {
-    public function testCanCreateStdoutLogging():void
+    public function testCanCreateStdoutLogging(): void
     {
         $loggerFactory = new StdoutLoggerFactory();
         $logger = $loggerFactory->createLogger();
@@ -18,7 +21,7 @@ class FactoryMethodTest extends TestCase
         $this->assertInstanceOf(StdoutLogger::class, $logger);
     }
 
-    public function testCanCreateFileLogging():void
+    public function testCanCreateFileLogging(): void
     {
         $loggerFactory = new FileLoggerFactory('./logs');
         $logger = $loggerFactory->createLogger();

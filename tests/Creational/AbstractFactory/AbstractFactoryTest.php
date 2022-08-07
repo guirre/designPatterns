@@ -1,4 +1,7 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Tests\Creational\AbstractFactory;
 
 use Guirre\DesignPatterns\Creational\AbstractFactory\CsvWriter;
@@ -23,8 +26,7 @@ class AbstractFactoryTest extends TestCase
      */
     public function testCanCreateJsonWriterOnUnixAndWindows(WriterFactory $writerFactory)
     {
-       $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
-       $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
+        $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
+        $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
     }
-   
 }
