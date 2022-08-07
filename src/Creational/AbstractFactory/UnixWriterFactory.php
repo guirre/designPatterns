@@ -1,13 +1,17 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Creational\AbstractFactory;
-class UnixWriterFactory  implements WriterFactory
+
+class UnixWriterFactory implements WriterFactory
 {
     public function createCsvWriter(): CsvWriter
     {
-        return new UnixCsvWriter();   
+        return new UnixCsvWriter();
     }
     public function createJsonWriter(): JsonWriter
     {
-        return new WinJsonWriter();   
+        return new WinJsonWriter();
     }
 }

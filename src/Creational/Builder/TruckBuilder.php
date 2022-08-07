@@ -1,4 +1,7 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Creational\Builder;
 
 use Guirre\DesignPatterns\Creational\Builder\Parts\Door;
@@ -12,20 +15,20 @@ class TruckBuilder implements Builder
     private Truck $truck;
     public function createVehicule()
     {
-        $this->truck = new Truck();   
+        $this->truck = new Truck();
     }
     public function getVehicule(): Vehicule
     {
-        return $this->truck;   
+        return $this->truck;
     }
     public function addEngine()
     {
-        $this->truck->setPart('Engine', new Engine());   
+        $this->truck->setPart('Engine', new Engine());
     }
     public function addDoor()
     {
         $this->truck->setPart('rightDoor', new Door());
-        $this->truck->setPart('leftDoor', new Door());   
+        $this->truck->setPart('leftDoor', new Door());
     }
     public function addWheel()
     {
