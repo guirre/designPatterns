@@ -18,8 +18,11 @@
     git chekout my_patch1
 
     Commit tous les changement et mettre à jour la branche distante
+
+    Comment faire pour pointer la branche locale au à la branche distante.
  
     git push --set-upstream origin my_patch1
+    git push --set-upstream origin install_super_linter
     ````
 
 4. Comment merger 
