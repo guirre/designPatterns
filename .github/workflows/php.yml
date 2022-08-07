@@ -39,3 +39,6 @@ jobs:
       run: php vendor/bin/phpunit tests
     - name: Execute PHP_CodeSniffer
       run:  php vendor/bin/phpcs --standard=PSR12 src/
+    - name: Execute PHPStan
+      run: php vendor/bin/phpstan analyse src tests
+
