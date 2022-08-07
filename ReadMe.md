@@ -1,16 +1,16 @@
-# le Design Pattern   Issues Tracking avec Github
+# le Design Pattern   Issues Tracking avec GitHub
 
 ## Apprendre le Design Pattern
 Réaliser les exercises sur  [designpatternsphp.readthedocs.io](https://designpatternsphp.readthedocs.io/en/latest/Creational/Prototype/README.html/).
 
-## Apprendre le Issues Tracking avec Github
+## Apprendre le Issues Tracking avec GitHub
 
 ### create un repository à partir d'un repository local
 #### Comment changer le nom de la branche principale Master en Main
 
 1. git branch -m master main
 2. git push -u origin main
-3. Change the new branch name in the repo host
+3. Change the new branch name in the repository host
 4. git push origin --delete master
 
 #### comment travailler avec le Pull Request
