@@ -50,3 +50,14 @@ git push -u origin main
 
 ### Comment desactiver un Workflow dans GitHub.
 Allez sur cette page [Disabling and enabling a workflow](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow)
+
+### Comment utiliser PhpSpan
+[Suivre ce lien ](https://phpstan.org/user-guide/getting-started)
+Installation :
+```
+composer require --dev phpstan/phpstan
+```
+Utilisation
+```
+vendor/bin/phpstan analyse src tests
+```
