@@ -1,6 +1,10 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Creational\AbstractFactory;
-class WinWriterFactory  implements WriterFactory
+
+class WinWriterFactory implements WriterFactory
 {
     public function createCsvWriter(): CsvWriter
     {

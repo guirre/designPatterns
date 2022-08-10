@@ -1,4 +1,7 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Tests\Creational\Builder;
 
 use Guirre\DesignPatterns\Creational\Builder\CarBuilder;
@@ -10,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 
 class DirectorTest extends TestCase
 {
-    public function testCanBuildTruct():void
+    public function testCanBuildTruct(): void
     {
         $director = new Director();
         $newVehicule = $director->build(new TruckBuilder());

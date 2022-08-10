@@ -1,9 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Creational\AbstractFactory;
-class WinCsvWriter  implements CsvWriter
+
+class WinCsvWriter implements CsvWriter
 {
     public function write(array $line): string
     {
-        return join(',',$line). "\r\n";
+        return join(',', $line) . "\r\n";
     }
 }

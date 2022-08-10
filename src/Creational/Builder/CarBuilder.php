@@ -1,4 +1,7 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace Guirre\DesignPatterns\Creational\Builder;
 
 use Guirre\DesignPatterns\Creational\Builder\Parts\Car;
@@ -12,11 +15,11 @@ class CarBuilder implements Builder
     private Car $car;
     public function createVehicule()
     {
-     $this->car = new Car(); 
+        $this->car = new Car();
     }
     public function getVehicule(): Vehicule
     {
-        return $this->car;   
+        return $this->car;
     }
     public function addDoor()
     {
@@ -26,7 +29,7 @@ class CarBuilder implements Builder
     }
     public function addEngine()
     {
-        $this->car->setPart('engine', new Engine());   
+        $this->car->setPart('engine', new Engine());
     }
     public function addWheel()
     {
@@ -34,6 +37,5 @@ class CarBuilder implements Builder
         $this->car->setPart('wheelLF', new Wheel());
         $this->car->setPart('wheelRB', new Wheel());
         $this->car->setPart('wheelLB', new Wheel());
-           
     }
 }
